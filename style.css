@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Proza+Libre:wght@700&display=swap");
+
+:root {
+    --spacing-1: 8px;
+    --spacing-2: 12px;
+    --spacing-3: 16px;
+    --spacing-4: 24px;
+  } 
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: #d5f9fb;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0 var(--spacing-3);
+    max-width: 1800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+.banner {
+    background-image: url(./resources/yellow.jpg);
+    height: 50%;
+    background-size: cover;
+    }
+
+.title {
+    background-color: rgb(122, 142, 240);
+    background-position: left;
+    position: absolute;
+    top: 5%;
+    margin: 0;
+    font-family:'Courier New', Courier, monospace;
+    margin-bottom: var(--spacing-2);
+    color: #68117c;
+    font-size: 70px;
+  }
+   
+  nav {    
+    display: flex;
+    align-items: center;
+    padding: var(--spacing-3) 0;
+    margin-bottom: 650px;
+  }
+  
+  .navigation {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    margin-left: auto;
+  }
+  
+.navigation-item {
+    padding-left: 3.5rem;
+    text-decoration: underline;
+    color: #1baddd;
+    font-size: 45px;
+    font-weight: bold;
+    margin: 0; 
+  } 
+
+.photo {
+    margin-top: -25px;
+    margin-right: 150px;
+    float: left;
+    width: 350px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+}
+   
+
+
+.banner-2 {
+  background-size: cover;
+  height: 75px;
+  background-image:
+}
+
+.banner-2 h2 {
+    color: #fff000;
+    display:flex;
+    font-size: 3em;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+.photo-2 {
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  border-radius: 8px;
+  margin-left: 585px;
+  width: 300px;
+  height: 350px;
+ }
+
+.about-me-container {
+  margin-right: var(--spacing-3);
+  font-size: x-large; 
+  font-family:'Courier New', Courier, monospace;
+  color: darkslategrey;
+  text-align: center;
+  font-weight: bold;
+}
+
+.project-image {
+  height: 400px;
+  width: 500px;
+}
+
+.project-description {
+  color: darkslategray;
+  font-weight: bold;
+  font-size: larger;
+}
+
+.project-title h3 {
+  display: inline;
+  font-size: 2em;
+}
+
+details {
+  cursor: pointer;
+}
+
+hr {
+  display: none;
+}
+
+summary {
+  list-style-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/right-arrow.svg);
+}
+
+footer {
+  width: 100%;
+  background-color: #85ccd0;
+  font-size: 0.8rem;
+  height: 10vh;
+  margin-top: 4vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: darkslategrey;
+
+}
+
+section {
+  padding: var(--spacing-3) 0;
+}
+
+.contact h2 {
+  color: #ff1493;
+  display:flex;
+  font-size: 3em;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+}
+
+.contact p {
+  color:#ff1493;
+  font-size: 1.5em;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.icon {
+  font-size: 85px;
+  color: #c71585;
+  margin: 0 var(--spacing-1);
+}
+
+
+#skills-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: #c71585;
+  font-size: 2em;
+}
+
+#skills-container > * {
+  font-size: 2em;
+  width: 2em;
+  margin-top: var(--spacing-1);
+}
+
+@media only screen and (max-width: 600px) {
+  .about-me-container {
+    flex-direction: column;
+  }
+  .banner {
+    flex-direction: column;
+}
+.projects-container {
+    flex-direction: column;
+}
+.skills {
+    flex-direction: column;
+}
+.navigation-items {
+    flex-direction: column;
+  }
+}
+.contact {
+    flex-direction: column;
+}
+  
