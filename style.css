@@ -71,7 +71,7 @@ body {
     margin: 10px; 
   } 
 
-.photo {
+/*.photo {
     margin-top: -25px;
     margin-right: 150px;
     float: left;
@@ -80,7 +80,7 @@ body {
     display: flex;
     justify-content: center;
     border-radius: 20px;
-}
+} */
    
 .section {
     color: #004b63;
@@ -95,13 +95,13 @@ body {
   display: flex;
   justify-content: center;
   border-radius: 8px;
-  margin: -20px 400px;
+  margin: -20px 450px;
   width: 300px;
   height: 350px;
  }
 
 .about-me-container p {
-  justify-content: right;
+  justify-content: left;
   font-size: 35px; 
   color: #004b63;
   text-align: justify;
@@ -113,7 +113,6 @@ body {
 }
 
 .about-me-container h3 {
-    justify-content: right;
     font-size: 35px; 
     color:#004b63;
     text-align: justify;
@@ -129,10 +128,22 @@ body {
     font-weight: bold;
 }
 
+.project-1 {
+  display: block;
+  padding: 10px;
+  position: relative;
+  margin-left: 650px;
+  margin-top: -150px;
+
+}
+
 .project {
   display: block;
   padding: 10px;
   position: relative;
+  margin-left:500px;;
+  margin-top: 10px;
+
 }
 
 .project-image1 {
