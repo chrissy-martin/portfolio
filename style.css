@@ -1,11 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Proza+Libre:wght@700&display=swap");
 
-:root {
-    --spacing-1: 8px;
-    --spacing-2: 12px;
-    --spacing-3: 16px;
-    --spacing-4: 24px;
-  } 
 
 html {
   scroll-behavior: smooth;
@@ -13,59 +7,68 @@ html {
 
 html,
 body {
-  height: 100%;
-  background-color: #d5f9fb;
+height: 100%;
+  background-color: #b5ddfa;
 }
 
 body {
     font-family: 'Courier New', Courier, monospace;
     margin: 0;
-    padding: 0 var(--spacing-3);
-    max-width: 1800px;
+    padding: 0 16px;
+    max-width: 1900px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
   }
 
-.banner {
-    background-image: url(./resources/yellow.jpg);
-    height: 50%;
+#banner {
+    background-image: url(./resources/536245.jpg);
+    width: 1875px;
     background-size: cover;
+    background-repeat: repeat-x;
     }
 
+.banner {
+  background-image: url(./resources/images.jfif);
+  width: 1875px;
+  height: 15%;
+  background-size: cover;
+  background-repeat: repeat-x;
+  }
+
+
 .title {
-    background-color: rgb(122, 142, 240);
+    padding: 5px;
     background-position: left;
     position: absolute;
     top: 5%;
     margin: 0;
-    font-family:'Courier New', Courier, monospace;
-    margin-bottom: var(--spacing-2);
-    color: #68117c;
+    margin-bottom: 16px;
+    color: #51eeee;
     font-size: 70px;
   }
    
   nav {    
     display: flex;
     align-items: center;
-    padding: var(--spacing-3) 0;
+    padding: 16px 0;
     margin-bottom: 650px;
   }
   
   .navigation {
     display: flex;
     list-style-type: none;
-    align-items: center;
     margin-left: auto;
+    text-decoration: none; 
   }
   
-.navigation-item {
-    padding-left: 3.5rem;
-    text-decoration: underline;
-    color: #1baddd;
+.navigation a {
+    padding-left: 20px;
+    text-decoration: none;
+    color: #004b63;
     font-size: 45px;
     font-weight: bold;
-    margin: 0; 
+    margin: 10px; 
   } 
 
 .photo {
@@ -79,20 +82,12 @@ body {
     border-radius: 20px;
 }
    
-
-
-.banner-2 {
-  background-size: cover;
-  height: 75px;
-  background-image:
-}
-
-.banner-2 h2 {
-    color: #fff000;
+.section {
+    color: #004b63;
     display:flex;
-    font-size: 3em;
-    font-family: 'Courier New', Courier, monospace;
-    text-align: center;
+    font-size: 50px;
+    justify-content: left;
+    margin-left: 150px;
 }
 
 .photo-2 {
@@ -100,46 +95,140 @@ body {
   display: flex;
   justify-content: center;
   border-radius: 8px;
-  margin-left: 585px;
+  margin: -20px 400px;
   width: 300px;
   height: 350px;
  }
 
-.about-me-container {
-  margin-right: var(--spacing-3);
-  font-size: x-large; 
-  font-family:'Courier New', Courier, monospace;
-  color: darkslategrey;
-  text-align: center;
+.about-me-container p {
+  justify-content: right;
+  font-size: 35px; 
+  color: #004b63;
+  text-align: justify;
   font-weight: bold;
+  flex-wrap: wrap;
+  margin-left: 800px;
+  margin-top: -400px;
+
 }
 
-.project-image {
-  height: 400px;
-  width: 500px;
+.about-me-container h3 {
+    justify-content: right;
+    font-size: 35px; 
+    color:#004b63;
+    text-align: justify;
+    font-weight: bold;  
+    margin-left: 800px;
 }
 
-.project-description {
-  color: darkslategray;
-  font-weight: bold;
-  font-size: larger;
+.about-me-container li {
+    justify-content: right;
+    font-size: 35px;
+    color:#004b63;
+    margin-left: 800px;
+    font-weight: bold;
 }
 
-.project-title h3 {
-  display: inline;
-  font-size: 2em;
+.project {
+  display: block;
+  padding: 10px;
+  position: relative;
 }
 
-details {
+.project-image1 {
+  display:flex;
+  flex-direction: row;
+  padding: 5px;
+  border: 5px solid rgb(122, 227, 248);
+  height: 500px;
+  width: 1000px;
   cursor: pointer;
+}
+
+.project-image2 {
+  border: 5px solid rgb(122, 227, 248);
+  padding: 5px;
+  height: 200px;
+  width: 500px;
+  cursor: pointer;
+}
+
+.project-image3 {
+  border: 5px solid rgb(122, 227, 248);
+  padding: 5px;
+  height: 200px;
+  width: 500px;
+  cursor: pointer;
+}
+
+.project-image4 {
+  border: 5px solid rgb(122, 227, 248);
+  padding: 5px;
+  height: 200px;
+  width: 500px;
+  cursor: pointer;
+}
+
+.project-title {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  font-size: 25px;
+  background-color: rgb(122, 227, 248);
+
+}
+
+#skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  color: #004b63;
+  font-size: 60px;
+  padding: 20px;
+  justify-content: space-evenly;
+  margin-left: 400px;
+  margin-top: -100px;
+}
+
+#skills-container > * {
+  font-size: 60px;
+  width: 50px;
+  margin-top: 8px;
 }
 
 hr {
   display: none;
 }
 
-summary {
-  list-style-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/right-arrow.svg);
+section {
+  padding: 20px 0;
+}
+
+.contact h2 {
+  color: #004b63;
+  display:flex;
+  font-size: 3em;
+  text-align: center;
+}
+
+.photo-3 {
+    height:400px;
+    width: 500px;
+    position: absolute;
+    margin-top: -550px;
+    margin-left: 700px;
+    float: left;
+    border-radius: 20px;
+}
+.contact p {
+  color:#004b63;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.icon {
+  font-size: 85px;
+  color: #004b63;
+  margin: 0 16px;;
 }
 
 footer {
@@ -155,60 +244,20 @@ footer {
 
 }
 
-section {
-  padding: var(--spacing-3) 0;
-}
-
-.contact h2 {
-  color: #ff1493;
-  display:flex;
-  font-size: 3em;
-  font-family: 'Courier New', Courier, monospace;
-  text-align: center;
-}
-
-.contact p {
-  color:#ff1493;
-  font-size: 1.5em;
-  font-family: 'Courier New', Courier, monospace;
-}
-
-.icon {
-  font-size: 85px;
-  color: #c71585;
-  margin: 0 var(--spacing-1);
-}
-
-
-#skills-container {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  color: #c71585;
-  font-size: 2em;
-}
-
-#skills-container > * {
-  font-size: 2em;
-  width: 2em;
-  margin-top: var(--spacing-1);
-}
-
 @media only screen and (max-width: 600px) {
-  .about-me-container {
+#about-me {
     flex-direction: column;
   }
-  .banner {
+.banner {
     flex-direction: column;
 }
-.projects-container {
+#projects {
     flex-direction: column;
 }
-.skills {
+#skills {
     flex-direction: column;
 }
-.navigation-items {
+.navigation-item {
     flex-direction: column;
   }
 }

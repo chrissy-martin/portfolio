@@ -22,11 +22,38 @@
             width:300px;
             height: 300px;
         }
+        #banner-2 {
+            border-left: 6px solid rgb(52, 1, 60);
+            position: absolute;
+            left: 20%;
+            height: 650px;
+            margin-left: 30px;
+        }
+        #banner-3 {
+            border-left: 6px solid rgb(52, 1, 60);
+            position: absolute;
+            left: 20%;
+            height: 200px;
+            margin-left: 30px;
+        }
+        #banner-4 {
+            border-left: 6px solid rgb(52, 1, 60);
+            position: absolute;
+            left: 20%;
+            height: 150px;
+            margin-left: 30px;
+        }
       </style>
+      <script>
+        // Picture element HTML5 shiv
+        document.createElement( "picture" );
+      </script>
+      <script src="https://cdn.jsdelivr.net/gh/scottjehl/picturefill@3.0.2/dist/picturefill.js" async></script>
 </head>
 
 <body>
-    <header class="banner">
+    <header id="banner">
+    <div class="banner">
         <h1 class="title">Chrissy Martin</h1>  
         <nav>
             <ul class="navigation">
@@ -36,90 +63,75 @@
                 <li class="navigation-item"><a href="./contact.html">Contact</a></li>
             </ul>
         </nav>
+    </div>
         <img class="photo" src="./resources/smile.jpg" alt="Chrissy">
     </header>
 
 <main>
+
     <section id="about-me">
-        <div class="about-me-container">
-            <div class="banner-2">
-                <h2>About Me</h2>
-            </div>
-
+            <div id="banner-2"></div>
+            <h2 class="section">About Me</h2>
             <br>
-            <p>Hello! My name is Chrissy Martin. 
-            <br>I am an animal care professional currently learning full stack engineering in the hopes of switching careers. 
-            <br>In my spare time, you can find me at a local coffee shop or at home with my 2 cats.</p>
-
+            <div class="about-me-container">
             <img class="photo-2" src="./resources/C+E2.jpg" alt="Chrissy with Ed, Gray seal">
-        </div>
+            <hr>
+                <p>Hello! My name is Chrissy Martin. I am an animal care professional currently learning full stack engineering in the hopes of switching careers. 
+                In my spare time, you can find me at a local coffee shop or at home with my 3 cats.</p>
+                <hr>
+                <h3>Fun Facts About Chrissy!</h3>
+                <ul>
+                    <li>Chrissy's favorite animal is the rhinoceros.</li>
+                    <li>Chrissy has been bitten by a lemur named Deeglan.</li>
+                    <li>Chrissy's christmas tree has been up since last Christmas.</li>
+                    <li>Chrissy has a freckle on her left eyeball.</li>
+                </ul>
+            </div>
     </section>
 
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr>
+
     <section id="projects">
-        <div class="banner-2">
-            <h2>Projects</h2>
-        </div>
-
+        <div id="banner-3"></div>
+        <h2 class="section">Projects</h2>
         <br>
-        <details class="project">
-            <summary class="project-title">
-                <h3>Drawing Prompt Randomizer</h3>
-            </summary>
-            <a href="https://github.com/chrissy-martin/MixedMessages-DrawingPrompt" target="_blank">
-                <img class="project-image" src="./resources/drawing-prompt-leader.png">
-            </a>
-            <p class="project-description">This is a program that will create a randomized drawing prompt.
-                The following features are included in the prompt to promote ideas for drawing and story telling:
-                <br>-Genre 
-                <br>-Species
-                <br>-Personality Trait
-                <br>-Artistic Style</p>
-        </details>
-
-        <br>
-        <details class="project">
-            <summary class="project-title">
-                <h3>Prework Study Guide</h3>
-            </summary>
+        <div class="project">
+                <h3 class="project-title">Prework Study Guide</h3>
             <a href="https://chrissy-martin.github.io/prework-study-guide/" target="_blank">
-                <img class="project-image" src="./resources/study-guide.jpg">
+                <img class="project-image1" src="./resources/study-guide.jpg">
             </a>
-            <p class="project-description">This is a study guide for the UW bootcamp pre-work</p>
-                <br>-Genre 
-                <br>-Species
-                <br>-Personality Trait
-                <br>-Artistic Style</p>
-        </details>
+        </div>
         <br>
-        <details class="project">
-            <summary class="project-title">
-                <h3>Coming Soon: Reddit App</h3>
-            </summary>
+        <div class="project">
+                <h3 class="project-title">Drawing Prompt Randomizer</h3>
+            <a href="https://github.com/chrissy-martin/MixedMessages-DrawingPrompt" target="_blank">
+                <img class="project-image2" src="./resources/drawing-prompt-leader.png">
+            </a>
+        </div>
+        <br>
+        <div class="project">
+                <h3 class="project-title">Coming Soon: Reddit App</h3>
             <a>
-                <img class="project-image" src="./resources/reddit.jpg">  
+                <img class="project-image3" src="./resources/reddit.jpg">  
             </a>
-            <p class="project-description"> This will be a personalized Reddit App using API</p>
-        </details>
-
+        </div>
         <br>
-        <details class="project">
-            <summary class="project-title">
-                <h3>Coming Soon: E-Commerce App</h3>
-            </summary>
-            <img class="project-image" src="./resources/e-commerce app.jpg">
-            <p class="project-description">This will be an e-commerce app (REST API)</p>
-        </details>
-
+        <div class="project">
+                <h3 class="project-title">Coming Soon: E-Commerce App</h3>
+            <img class="project-image4" src="./resources/e-commerce app.jpg">
+        </div>
         <br>
         <br>
         <br>
     </section>
 
     <section id="skills">
-        <div class="banner-2">
-            <h2>Skills</h2>
-        </div>
-
+        <div id="banner-4"></div>
+        <h2 class="section">Skills</h2>
         <br>
         <div id="skills-container">
           <i class="fab fa-html5"></i> 
