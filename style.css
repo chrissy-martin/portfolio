@@ -48,14 +48,14 @@ body {
     font-size: 70px;
   }
    
-  nav {    
+nav {    
     display: flex;
     align-items: center;
     padding: 16px 0;
     margin-bottom: 650px;
   }
   
-  .navigation {
+.navigation {
     display: flex;
     list-style-type: none;
     margin-left: auto;
@@ -70,17 +70,6 @@ body {
     font-weight: bold;
     margin: 10px; 
   } 
-
-/*.photo {
-    margin-top: -25px;
-    margin-right: 150px;
-    float: left;
-    width: 350px;
-    height: 450px;
-    display: flex;
-    justify-content: center;
-    border-radius: 20px;
-} */
    
 .section {
     color: #004b63;
@@ -245,76 +234,69 @@ footer {
 
 }
 
-/*@media only screen and (max-width: 600px) {
-#about-me {
-    flex-direction: column;
+
+@media (max-width: 1030px) {
+  .title {
+      font-size: 20px !important;
   }
-#banner {
-    flex-direction: column;
-}
-#projects {
-    flex-direction: column;
-}
-#skills {
-    flex-direction: column;
-}
-.navigation-item a {
-    flex-direction: column;
-    float: none;
-    width: 100%;
+  .navigation-item a {
+      padding: 0 15px !important;
+      font-size: 1.2rem !important;
   }
+
+  .section {
+      width: 90% !important;
+  }
+
+
+}
+
+@media (max-width: 768px) {
+  .navigation {
+      justify-content: flex-start !important;
+  }
+
+  .banner {
+    width: 600px !important;
+  }
+
+  #banner {
+    width: 600px !important;
+  }
+
 .photo-2 {
   display: none;
 }
-body {
-  font-size: 30px;
+
+.photo-3 {
+  display: none;
 }
-#banner-2{
-  flex-direction: column;
 }
   
-}
 
-@media only screen and (min-width: 600px) {
-  #about-me {
-      flex-direction: column;
-    }
+@media (max-width: 480px) {
+
+  .banner {
+    width: 500px !important;
+  }
+
   #banner {
-      flex-direction: column;
+    width: 500px !important;
   }
-  #projects {
-      flex-direction: column;
+
+  .title {
+      font-size: 15px !important;
   }
-  #skills {
-      flex-direction: column;
+
+  .icon-container > a > .icon {
+      padding: 0 20px !important;
   }
-  .navigation-item a {
-      flex-direction: column;
-      float: none;
-      width: 100%;
-    }
-  
-  #banner-2{
-    flex-direction: column;
+
+  .photo-2 {
+      display: none;
   }
-    
-  }*/
-/* Extra Small Devices, Phones */ 
-@media only screen and (min-width : 480px) {
 
-}
-
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px) {
-
-}
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {
-
-}
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px) {
-
+  .photo-3  {
+    display: none;
+  }
 }
