@@ -9,7 +9,7 @@ This is the beginnings of my portfolio webpage. This webpage will hold all of my
 
 ## Usage
 
-The deployed wepage can be found here: https://chrissy-martin.github.io/week-two-challenge/
+The deployed wepage can be found here: https://chrissy-martin.github.io/portfolio/
 
 Here are screenshots of the application:
 
