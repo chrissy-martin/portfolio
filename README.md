@@ -1,4 +1,4 @@
-# Week-Two-Challenge
+# Portfolio
 Week 2 challenge for UW bootcamp: portfolio webpage.
 
 
